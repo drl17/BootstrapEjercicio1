@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <link rel="shortcut icon" href="/Favicon/favicon.ico" type="image/x-icon">
+    <title>Arctic Monkeys Colombia</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon-96x96.png" type="image/x-icon">
+  </head>
+  <body>
+    
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/Index.html">Arctic Monkeys</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/LaBanda.html">La banda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Gira.html">Gira</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin Barra de navegación -->
+    <br>
+
+    <!-- Texto sencillo en columnas -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"><h2 class="text-warning bg-dark text-center">Los Monos árticos</h2></div>
+            <div class="col-sm-4"><h2 class="text-primary bg-dark text-center" >En concierto</h2></div>
+            <div class="col-sm-4"><h2 class="text-danger bg-dark text-center" >Colombia</h2></div>
+        </div>
+        
+        <br>
+        <!-- Carrusel -->
+
+        <div class="row">
+          <div class="col-4"></div>
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!-- transición e imágenes -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Img_Index/la.jpg" alt="Los Angeles" width="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="/Img_Index/chicago.jpg" alt="Chicago" width="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="/Img_Index/ny.jpg" alt="New York" width="100%">
+            </div>
+          </div>
+          
+          <!-- botones de control -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          </div>
+          <div class="col-4"></div>
+        </div>
+
+        <br>
+
+        <!-- Ejemplo de modal -->   
+
+        <div class="row">
+          <h3 class="text-center">No te pierdas este concierto</h3>
+          <br>
+          <br>
+          <p class="text-center">Haz clic en el botón para ir al formulario de registro</p>
+        </div>
+        
+
+        <!-- Ejemplo de botón para modal -->
+        <div class="text-center">
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+          Entradas
+          </button>
+        </div>
+        <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <h4 class="modal-title">Entradas</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Cuerpo del Modal con formulario de registro -->
+            <div class="modal-body">
+              Regístrate
+              <form>
+                <div class="mb-3 mt-3">
+                  <label for="Nombre" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control border border-primary" id="" placeholder=" Haz clic aquí y escribe tu nombre completo" name="Nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="Documento" class="form-label">Documento:</label>
+                  <input type="text" class="form-control border border-primary" id="" placeholder="Haz clic aquí y escribe tu número de documento" name="Número de documento">
+                </div>
+                <div class="mb-3">
+                  <label for="Contacto" class="form-label">Teléfono/Célular:</label>
+                  <input type="tel" class="form-control border border-primary" id="" placeholder="Haz clic aquí y escribe tu número de contacto" name="Número de contacto">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input form-control border border-primary" type="checkbox" name="Tratamiento de datos">Acepto el tratamiento de datos personales
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <button type="submit" class="btn btn-warning">Borrar</button>
+              </form>
+            </div>
+            
+      
+            <!-- Botón para cerrar el Modal -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+      
+          </div>
+        </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <h4 class="modal-title text-center">Disfruta de algunas de sus canciones</h4>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <br>
+    
+        <!-- Cards -->
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="/Img_Index/AM.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">I Wanna Be Yours</h4>
+                  <p class="card-text">Haz clic en el siguiente botón</p>
+                  <a href="https://bit.ly/3TV7o0u" target="_blank" class="btn btn-dark">Escuchar</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="/Img_Index/AM.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">505</h4>
+                  <p class="card-text">Haz clic en el siguiente botón</p>
+                  <a href="https://bit.ly/440aYeE" target="_blank" class="btn btn-dark">Escuchar</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="/Img_Index/AM.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Do I Wanna Know?</h4>
+                  <p class="card-text">Haz clic en el siguiente botón</p>
+                  <a href="https://bit.ly/49vILgA" target="_blank" class="btn btn-dark">Escuchar</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="/Img_Index/AM.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">R U Mine?</h4>
+                  <p class="card-text">Haz clic en el siguiente botón</p>
+                  <a href="https://bit.ly/3xCN6kS" target="_blank" class="btn btn-dark">Escuchar</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+      <br>
+      
+      <!-- Pie de página -->
+  
+      <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1" target="_blank"
+              href="https://www.facebook.com/ArcticMonkeys/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-facebook"></i></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1" target="_blank"
+              href="https://twitter.com/ArcticMonkeys"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1" target="_blank"
+              href="https://www.instagram.com/arcticmonkeys/?hl=en"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i></a>
+      
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" target="_blank" href="https://arcticmonkeys.com/">arcticmonkeys.com/</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <br>
+    </div>
+  </body>
+  <!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
